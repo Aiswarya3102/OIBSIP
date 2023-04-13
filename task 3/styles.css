@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(img.jpg);
+    background-size: cover;
+    color: #222;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .title {
+    color: #222;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+  }
+  .temperature-converter {
+    background: #ebecec;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 25px 20px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+  }
+  .result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result-heading {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: cursive;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+  }
+  label {
+    color: #555;
+    font-size: 0.8rem;
+    font-family: cursive;
+    margin-bottom: 5px;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: cursive;
+  }
+  input:focus {
+    border: 1px solid #4c49f3;
+  }
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+  }
+  option {
+    color: black;
+    font-family: cursive;
+  }
+  #convert-btn {
+    background: linear-gradient(to bottom, #3633f3, #23aee5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+  }
